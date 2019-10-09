@@ -56,13 +56,11 @@ Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
                         <h5>Historial de selectores:</h5>
                     </div>
                 </div>
-                <hr>
                 <div class="col-md-6">
                     <div class="seleccionados">
                         <h5>Elementos seleccionados:</h5>
                     </div>
                 </div>
-                <hr>
             </div>
         </div>
         <div class="col-md-8">
@@ -115,7 +113,7 @@ Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
                 $objects.fadeOut('1000');
                 $objects.fadeIn('1000');
                 $('.historial').append('<p>' + select.val() + '</p>');
-                $('.seleccionados').find('h5').text('Elementos Seleccionados: ' + $objects.length);
+                $('.seleccionados').append('<p>' + $objects.length + '</p>')
                 select.val('');
             };
         };
